@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mvvm_with_provider/app_store/app_store.dart';
-import 'package:mvvm_with_provider/model/repository/repository.dart';
-import 'package:mvvm_with_provider/routes/name_routes.dart';
-import 'package:mvvm_with_provider/utils/common_toast.dart';
+
+import '../app_store/app_store.dart';
+import '../model/repository/repository.dart';
+import '../routes/name_routes.dart';
+import '../utils/common_toast.dart';
+
 
 class LogInProvider with ChangeNotifier{
   final _appRepository = AppRepository();

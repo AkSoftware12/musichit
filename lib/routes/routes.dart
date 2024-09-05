@@ -1,12 +1,13 @@
 
 import 'package:flutter/material.dart';
-import 'package:mvvm_with_provider/routes/name_routes.dart';
-import 'package:mvvm_with_provider/view/home_screen.dart';
-import 'package:mvvm_with_provider/view/login_screen.dart';
-import 'package:mvvm_with_provider/view/splash_screen.dart';
-import 'package:mvvm_with_provider/view_model/login_provider.dart';
 import 'package:provider/provider.dart';
 import '';
+import '../view/home_screen.dart';
+import '../view/login_screen.dart';
+import '../view/otp_verification_screen.dart';
+import '../view/splash_screen.dart';
+import '../view_model/login_provider.dart';
+import 'name_routes.dart';
 
 class Routes{
 
@@ -17,7 +18,6 @@ class Routes{
       case RouteName.splashScreen:
         return MaterialPageRoute(builder: (context)=> const SplashScreen());
 
-
       case RouteName.logInScreen:
         final args = settings.arguments as Map;
         return MaterialPageRoute(builder: (context)=>
@@ -25,6 +25,11 @@ class Routes{
                 create: (BuildContext context) => LogInProvider(),
                 child: LogInScreen(args:  args)));
 
+
+      case RouteName.verify:
+        return MaterialPageRoute(builder: (context)=>  OTPVerificationScreen(
+          data: settings.arguments,
+        ));
 
       case RouteName.homepage:
         return MaterialPageRoute(builder: (context)=>  HomeScreen());

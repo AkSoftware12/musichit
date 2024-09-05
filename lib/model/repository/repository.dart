@@ -1,5 +1,7 @@
-import 'package:mvvm_with_provider/model/models/user_list.dart';
-import 'package:mvvm_with_provider/model/services/network_services.dart';
+
+
+import '../models/user_list.dart';
+import '../services/network_services.dart';
 
 class AppRepository{
   final BaseApiServices _apiServices = NetworkApiServices();

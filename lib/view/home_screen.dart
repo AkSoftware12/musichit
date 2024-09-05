@@ -2,13 +2,13 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mvvm_with_provider/model/services/api_response.dart';
-import 'package:mvvm_with_provider/utils/app_colors.dart';
-import 'package:mvvm_with_provider/view_model/user_list_provider.dart';
 import 'package:provider/provider.dart';
 import '../app_store/app_store.dart';
+import '../model/services/api_response.dart';
 import '../routes/name_routes.dart';
 import '../textSize.dart';
+import '../utils/app_colors.dart';
+import '../view_model/user_list_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -180,13 +180,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          15.0),
+                                                                          0.0),
                                                             ),
                                                             child: ClipRRect(
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          10.0),
+                                                                          0.0),
                                                               child:
                                                                   CachedNetworkImage(
                                                                 imageUrl: playlist![itemIndex].imageData

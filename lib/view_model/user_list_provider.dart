@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_with_provider/model/models/user_list.dart';
-import 'package:mvvm_with_provider/model/services/api_response.dart';
 
+
+import '../model/models/user_list.dart';
 import '../model/repository/repository.dart';
+import '../model/services/api_response.dart';
 import '../utils/common_toast.dart';
 
 class UserListProvider with ChangeNotifier{

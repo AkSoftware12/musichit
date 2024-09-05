@@ -1,5 +1,6 @@
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:mvvm_with_provider/utils/app_colors.dart';
+
+import 'app_colors.dart';
 
 commonToast(String message){
   Fluttertoast.showToast(

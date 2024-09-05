@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_with_provider/app_store/app_store.dart';
-import 'package:mvvm_with_provider/routes/name_routes.dart';
+
+import '../app_store/app_store.dart';
+import '../routes/name_routes.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -44,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: SizedBox(
           height: 200,width: 200,
-          child: Image.asset("assets/splash_screen_image.png"),
+          child: Image.asset("assets/music_logo.png"),
         ),
       ),
     );

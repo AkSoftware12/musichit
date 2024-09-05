@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_with_provider/routes/name_routes.dart';
-import 'package:mvvm_with_provider/routes/routes.dart';
-import 'package:mvvm_with_provider/utils/app_colors.dart';
+import 'package:musichit/routes/name_routes.dart';
+import 'package:musichit/routes/routes.dart';
+import 'package:musichit/utils/app_colors.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
         useMaterial3: true,
